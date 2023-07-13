@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<!-- <web-view src="https://hotoke.ai"></web-view> -->
+<view class="container" style='width:100%;min-height:100%;background-image:url("https://www.helloimg.com/images/2022/07/02/ZMj39E.png");background-size:100% 100%;'>
+  <view class="barrage-view">
+    <view wx:for="{{barrageLineCount}}" wx:for-item="count"
+            wx:for-index="lineIndex" data-index="{{lineIndex}}"
+            wx:key="*this" class="barrage-line">
+        <view class='barrage-msg' wx:for="{{barrageMsgs[lineIndex].msgInfos}}"
+                wx:key="msg">
+            <!-- <image class='barrage-avatar' src='{{item.avatarUrl}}'></image> -->
+            <text class='barrage-text'>{{item.msg}}</text>
+        </view>
+    </view>
+  </view>
+  <view class="info">
+      <image class="info_image" src='../../image/sheng.png' />
+      <view class="info_picker">
+        <picker class='usermotto' mode="multiSelector" bindchange="bindMultiPickerChange" bindtap='datepickerTap'  value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          {{multiArray[0][multiIndex[0]]+multiArray[1][multiIndex[1]]+multiArray[2][multiIndex[2]]+multiArray[3][multiIndex[3]]}}
+        </view>
+        </picker>
+      </view>
+    </view>
+  
+    <view class="info">
+      <image class="info_image" src='../../image/sex.png' />
+      <view class="info_picker">
+        <picker bindchange="bindPickerChange" bindtap='sexpickerTap'  value="{{sexIndex}}" range="{{sexArray}}">
+        <view class="picker">
+          {{sexArray[sexIndex]}}
+        </view>
+        </picker>
+      </view>
+    </view>
+
+  <view>
+    <image src="../../image/confirm_focus.png" class="confirm" bindtap="Confirm" />
+  </view>
+</view>

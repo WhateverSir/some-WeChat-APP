@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/item/item",
+        "pages/result/result"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fdf6ec",
+        "navigationBarTitleText": "古典星座",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "backgroundColor": "#fdf6ec",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "info",
+                "iconPath": "image/burger.png",
+                "selectedIconPath": "image/burger_focus.png"
+            },
+            {
+                "pagePath": "pages/item/item",
+                "text": "item",
+                "iconPath": "image/good.png",
+                "selectedIconPath": "image/good_focus.png"
+            },
+            {
+                "pagePath": "pages/result/result",
+                "text": "logs",
+                "iconPath": "image/ring.png",
+                "selectedIconPath": "image/ring_focus.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

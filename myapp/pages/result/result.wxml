@@ -1,0 +1,11 @@
+<!--pages/result.wxml-->
+<view class="container" style='width:100%;min-height:100%;background-image:url("https://www.helloimg.com/images/2022/07/02/ZMj1xv.png");background-size:100% 100%;'>
+    <view class="mod-text">
+        <text>您的古典星座是：</text>
+        <text>{{result[0]}}</text>
+        <text>{{result[1]}}</text>
+        <text>{{result[2]}}</text>
+        <text>{{result[3]}}</text>
+    </view>
+
+</view>
